@@ -33,7 +33,9 @@ onUnmounted(() => {
         class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
       >
       </span>
-      <Icon name="simple-icons:whatsapp" class="w-8 h-8 relative" />
+      
+      <i class='bx bxl-whatsapp text-4xl relative'></i>
+      
     </a>
   </div>
 </template>
