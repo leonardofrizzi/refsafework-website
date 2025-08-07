@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "@heroicons/vue": "^2.2.0",
+    "@iconify-json/simple-icons": "^1.2.46",
     "@nuxt/image": "^1.11.0",
-    "@nuxtjs/tailwindcss": "^6.14.0"
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "nuxt-icon": "^1.0.0-beta.7"
   }
 }
