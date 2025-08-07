@@ -1,20 +1,18 @@
 <script setup>
 const services = [
   {
-    icon: 'heroicons:shield-check-solid',
-    // MUDANÇA: Texto exato da imagem
+    // MUDANÇA: Trocado o ícone que não existia por um de capacete.
+    iconClass: 'bx bxs-hard-hat', 
     title: 'GESTÃO DE SAÚDE E SEGURANÇA DO TRABALHO',
     to: '/servicos/gestao-sst'
   },
   {
-    icon: 'heroicons:academic-cap-solid',
-    // MUDANÇA: Texto exato da imagem
+    iconClass: 'bx bxs-book-reader',
     title: 'DESENVOLVIMENTO E REALIZAÇÃO DE TREINAMENTOS TÉCNICOS E COMPORTAMENTAIS',
     to: '/servicos/treinamentos'
   },
   {
-    icon: 'heroicons:cog-6-tooth-solid',
-    // MUDANÇA: Texto exato da imagem
+    iconClass: 'bx bxs-cog',
     title: 'GESTÃO DE SEGURANÇA DE PROCESSO',
     to: '/servicos/seguranca-de-processo'
   }
@@ -36,9 +34,8 @@ const services = [
         <HomeServiceCard
           v-for="service in services"
           :key="service.title"
-          :icon="service.icon"
+          :iconClass="service.iconClass"
           :title="service.title"
-          :description="service.description"
           :to="service.to"
         />
       </div>
