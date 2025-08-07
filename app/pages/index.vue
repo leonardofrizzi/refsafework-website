@@ -4,6 +4,6 @@
     <HomeServicesSection />
     <HomeAboutSection />
     <HomeClientsCarousel />
-
+    <HomeCtaSection />
     </div>
 </template>
