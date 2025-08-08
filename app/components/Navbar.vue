@@ -16,8 +16,8 @@ const navLinks = [
       { text: 'Documentos', to: '/solucoes/documentos' },
     ] 
   },
+  { text: 'Sobre Nós', to: '/sobre' },
   { text: 'Treinamentos EAD', to: '/treinamentos-ead' },
-  { text: 'Clientes', to: '/clientes' },
   { text: 'Diagnóstico SSMA', to: '/diagnostico-ssma' },
   { text: 'Contato', to: '/contato' },
 ];

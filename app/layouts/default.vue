@@ -7,5 +7,6 @@
     
     <Footer />
     <WhatsAppButton />
+    <CookieBanner />
   </div>
 </template>
