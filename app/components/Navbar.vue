@@ -7,7 +7,8 @@ const isSolutionsDropdownOpen = ref(false);
 const navLinks = [
   { text: 'Início', to: '/' },
   { 
-    text: 'Soluções', 
+    text: 'Soluções',
+    to: '/solucoes', // MUDANÇA: Adicionado o link para a página principal de soluções
     dropdown: [
       { text: 'Profissionais Técnicos', to: '/solucoes/profissionais-tecnicos' },
       { text: 'Treinamentos Normativos', to: '/solucoes/treinamentos-normativos' },
@@ -48,12 +49,12 @@ onUnmounted(() => { window.removeEventListener('resize', closeMenuOnResize); });
               @mouseenter="isSolutionsDropdownOpen = true" 
               @mouseleave="isSolutionsDropdownOpen = false"
             >
-              <button class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-amber-400 transition-colors duration-300 flex items-center">
+              <NuxtLink :to="link.to" class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-amber-400 transition-colors duration-300 flex items-center">
                 <span>{{ link.text }}</span>
-                <svg class="ml-1 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <svg class="ml-1 h-5 w-5 text-black" xmlns="http://www.w.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                 </svg>
-              </button>
+              </NuxtLink>
               <transition
                 enter-active-class="transition ease-out duration-200"
                 enter-from-class="opacity-0 translate-y-1"
@@ -107,7 +108,7 @@ onUnmounted(() => { window.removeEventListener('resize', closeMenuOnResize); });
             <template v-for="link in navLinks" :key="link.text">
                <NuxtLink v-if="!link.dropdown" :to="link.to" @click="isMobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-zinc-700">{{ link.text }}</NuxtLink>
                <div v-else>
-                 <h3 class="px-3 py-2 text-amber-400 font-semibold">{{ link.text }}</h3>
+                 <NuxtLink :to="link.to" @click="isMobileMenuOpen = false" class="block px-3 py-2 text-amber-400 font-semibold">{{ link.text }}</NuxtLink>
                  <NuxtLink v-for="item in link.dropdown" :key="item.text" :to="item.to" @click="isMobileMenuOpen = false" class="pl-6 pr-3 py-2 rounded-md block hover:bg-zinc-700">
                    {{ item.text }}
                  </NuxtLink>
