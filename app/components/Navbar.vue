@@ -18,8 +18,6 @@ const navLinks = [
     ] 
   },
   { text: 'Sobre Nós', to: '/sobre' },
-  { text: 'Treinamentos EAD', to: '/treinamentos-ead' },
-  { text: 'Diagnóstico SSMA', to: '/diagnostico-ssma' },
   { text: 'Contato', to: '/contato' },
 ];
 
