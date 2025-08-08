@@ -3,7 +3,7 @@
     <HomeHeroSection />
     <HomeServicesSection />
     <HomeAboutSection />
-    <HomeClientsCarousel />
+    <!-- <HomeClientsCarousel /> -->
     <HomeCtaSection />
     </div>
 </template>

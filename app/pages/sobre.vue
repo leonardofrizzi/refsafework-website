@@ -2,13 +2,13 @@
   <div>
     <section class="relative bg-zinc-900 text-white">
       <div class="absolute inset-0">
-        <NuxtImg 
+        <!-- <NuxtImg 
           src="/about-hero-image.jpg" 
           alt="Ambiente de trabalho industrial seguro" 
           class="w-full h-full object-cover opacity-30"
           format="webp"
           quality="80"
-        />
+        /> -->
       </div>
       <div class="relative container mx-auto px-6 py-24 text-center">
         <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">

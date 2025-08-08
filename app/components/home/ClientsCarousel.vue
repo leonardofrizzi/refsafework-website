@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, FreeMode } from 'swiper/modules';
 
@@ -65,4 +65,4 @@ const modules = [Autoplay, FreeMode];
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
-</style>
+</style> -->
