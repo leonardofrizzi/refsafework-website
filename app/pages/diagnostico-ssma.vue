@@ -137,7 +137,7 @@ useHead({
               </ul>
           </div>
           <div>
-            <NuxtImg src="/placeholders/diagnostico-1.jpg" alt="Gestor de sucesso e confiante" class="rounded-lg shadow-2xl w-full h-auto"/>
+            <NuxtImg src="/gestor.webp" alt="Gestor de sucesso e confiante" class="rounded-lg shadow-2xl w-full h-auto"/>
           </div>
         </div>
        </div>
