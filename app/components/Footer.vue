@@ -22,7 +22,7 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/vue/24/solid'
             </li>
             <li class="flex items-center">
               <PhoneIcon class="w-6 h-6 mr-3 flex-shrink-0 text-zinc-400" />
-              <span>(16) 9 9700-0881 / (19) 9 9935-4908</span>
+              <span>(19) 9 9833-3945 / (19) 9 9935-4908</span>
             </li>
             <li class="flex items-center">
               <EnvelopeIcon class="w-6 h-6 mr-3 flex-shrink-0 text-zinc-400" />
