@@ -8,7 +8,7 @@ const navLinks = [
   { text: 'Início', to: '/' },
   { 
     text: 'Soluções',
-    to: '/solucoes', // MUDANÇA: Adicionado o link para a página principal de soluções
+    to: '/solucoes', 
     dropdown: [
       { text: 'Profissionais Técnicos', to: '/solucoes/profissionais-tecnicos' },
       { text: 'Treinamentos Normativos', to: '/solucoes/treinamentos-normativos' },
@@ -18,6 +18,7 @@ const navLinks = [
     ] 
   },
   { text: 'Sobre Nós', to: '/sobre' },
+  { text: 'Treinamentos EAD', to: '/treinamentos-ead'},
   { text: 'Contato', to: '/contato' },
 ];
 
